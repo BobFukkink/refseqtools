@@ -3,7 +3,7 @@
 ## 1. Download representative and reference accession list from assembly database
 ### Bottom of the page "Send to", "File", "ID Table", "Accession"
 
-https://www.ncbi.nlm.nih.gov/assembly/?term=prokaryotes%5BOrganism%5D+AND+%22latest+refseq%22%5Bfilter%5D+AND+(%22representative+genome%22%5Bfilter%5D+OR+%22reference+genome%22%5Bfilter%5D)
+https://www.ncbi.nlm.nih.gov/assembly/?term=Bacteria%5BOrganism%5D+AND+(representative_genome%5Bfilter%5D+OR+reference_genome%5Bfilter%5D)+AND+latest_refseq%5Bfilter%5D
 
 ## 2. Get only the Refseq assembly accessions from the file
 
