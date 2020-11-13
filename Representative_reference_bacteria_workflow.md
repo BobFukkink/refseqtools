@@ -1,5 +1,10 @@
 # Workflow downloading Representative and Reference genomes from bacterial domain and add Model organisms (human, mouse, rat)
 
+TO DO LIST:
+- Add documentation
+- Upload corresponding scripts
+
+
 ## 1. Download representative and reference accession list from assembly database
 ### Bottom of the page "Send to", "File", "ID Table", "Accession"
 
