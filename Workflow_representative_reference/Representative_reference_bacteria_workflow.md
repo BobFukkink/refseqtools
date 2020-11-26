@@ -7,6 +7,8 @@ https://www.ncbi.nlm.nih.gov/assembly/?term=Bacteria%5BOrganism%5D+AND+(represen
 
 ## 2. Get only the Refseq assembly accessions from the file
 
+FILE: refseqtools/Workflow_representative_reference/assembly_list_refseq_accessions.txt
+
 ```bash
 cat assembly_result.txt | egrep -o "GCF_[0-9]{9}.[0-9]" > assembly_list_refseq_accessions.txt
 ```
