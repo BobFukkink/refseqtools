@@ -15,6 +15,9 @@ cat assembly_result.txt | egrep -o "GCF_[0-9]{9}.[0-9]" > assembly_list_refseq_a
 
 ## 3. Download genomes assembly-stats and fasta files using ncbi-genome-download
 
+Makes use of ncbi-genome-download 0.3.0
+REF: https://github.com/kblin/ncbi-genome-download
+
 SCRIPT: refseqtools/Workflow_representative_reference/download_stats_fasta_bacteria.sh
 
 ### Assembly Statistics files
@@ -46,12 +49,13 @@ time ncbi-genome-download \
 	bacteria
 ```
 ## 4. It may occur that some Refseq accessions are “replaced” or “suppressed” so these need to be downloaded maually using the ftp website of NCBI.
+### Use diff on query list and list of downloaded accessions to find missing accessions.
 
 https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/
 
 ## 5. To create the phylogenetic tree we need a DNA file for the Bacteria
 ### File should contain format: accession | taxid | genome length
-#### You should be in the folder: Statistics_files_refseq_accessions/refseq/
+#### You should be in the folder: Statistics_files_refseq_accessions/refseq/ (which is the output folder from ncbi-genome-download)
 
 SCRIPT: refseqtools/Workflow_representative_reference/get_taxIDs_accessions_lengths.sh
 
