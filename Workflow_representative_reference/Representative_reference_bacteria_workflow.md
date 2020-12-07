@@ -304,6 +304,9 @@ cat seqid2taxid_bacteria_model_virus_archaea_fungi.map |sort -u > Uniq_seqid2tax
 ```
 
 ## 18. Filter accession from complete fasta file
+### Keeping only prefixes AC_,NC_,NZ_ (genomic and mostly complete)
+
+REF: https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly
 
 SCRIPT: refseqtools/filter_fasta.py
 
